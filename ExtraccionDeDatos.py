@@ -1,3 +1,4 @@
+#Proyecto Wikipedia
 import requests
 from lxml import html
 encabezados = {
@@ -15,3 +16,4 @@ print(ingles.text_content())
 idiomas = parser.find_class('central-featured-lang')
 for idioma in idiomas:
     print(idioma.text_content())
+    
